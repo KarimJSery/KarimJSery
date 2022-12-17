@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+    <meta http-equiv=content-type content="text/html; charset=UTF-8">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Le SEO de cette page : un <h1>, la propriété CSS «font-display: SWAP», des balises sémantiques(main,<p>, <a>, <ul>...), des ALT dans les <img> et le code minifié.">
+    <title>CV Karim SERY</title>
+    <style>
+        @media screen and (max-width:575.98px) {
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: grey;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-display: SWAP
+            }
+
+            .container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid black
+            }
+
+            .col1 {
+                width: 100%;
+                min-height: 200px;
+                background-color: white;
+                text-align: center
+            }
+
+            .col2 {
+                width: 100%;
+                min-height: 200px;
+                background-color: white
+            }
+
+            .row {
+                flex-direction: column;
+                align-content: center
+            }
+
+            .bloc {
+                width: 100%;
+                min-height: 20px;
+                background-color: white;
+                display: flex;
+                text-align: center;
+                padding-bottom: 20px
+            }
+
+            h3,
+            ul,
+            li {
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: left;
+                text-decoration: none;
+                list-style-type: circle
+            }
+
+            ul li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin-bottom: 10px
+            }
+
+            i {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                margin-right: 10px
+            }
+
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg)
+            }
+
+            hr {
+                margin: 20px 10px 20px 20px
+            }
+
+            .icones img {
+                width: 50px;
+                height: 50px
+            }
+
+            .profil img {
+                width: 100px;
+                height: 100px;
+                margin-top: 3px;
+                border-radius: 50%
+            }
+
+            span {
+                font-weight: bold;
+                color: #0f3f3f
+            }
+        }
+
+        @media(min-width:576px) and (max-width:991.98px) {
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+            .container {
+                width: auto;
+                min-width: 576px;
+                max-width: 991.98px;
+                min-height: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid black
+            }
+
+            .col1 {
+                width: auto;
+                min-width: 576px;
+                max-width: 991.98px;
+                min-height: 200px;
+                background-color: white;
+                text-align: center;
+                margin: auto
+            }
+
+            .col2 {
+                width: auto;
+                min-width: 576px;
+                max-width: 991.98px;
+                min-height: 200px;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto
+            }
+
+            .row {
+                flex-direction: column;
+                align-content: center
+            }
+
+            .bloc {
+                min-height: 20px;
+                background-color: white;
+                display: flex;
+                text-align: center;
+                padding-bottom: 20px
+            }
+
+            .border {
+                border: 1px solid black;
+                margin: 30px 30px 30px 10px
+            }
+
+            h3,
+            ul,
+            li {
+                margin-left: 30px;
+                margin-right: 30px;
+                text-align: left;
+                text-decoration: none;
+                list-style-type: circle
+            }
+
+            ul li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin-bottom: 10px
+            }
+
+            i {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                margin-right: 10px
+            }
+
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg)
+            }
+
+            hr {
+                margin: 20px 10px 20px 20px
+            }
+
+            .icones img {
+                width: 50px;
+                height: 50px
+            }
+
+            .profil img {
+                max-width: 100%;
+                width: 100px;
+                height: 100px;
+                margin-top: 3px;
+                border-radius: 50%
+            }
+
+            span {
+                font-weight: bold;
+                color: #0f3f3f
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: grey;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+            .container {
+                width: 960px;
+                min-height: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid black
+            }
+
+            .col1 {
+                width: 320px;
+                min-height: 200px;
+                background-color: white;
+                text-align: center
+            }
+
+            .col2 {
+                width: 640px;
+                min-height: 400px;
+                background-color: white
+            }
+
+            .row {
+                flex-direction: column;
+                align-content: center
+            }
+
+            .bloc {
+                min-height: 20px;
+                display: flex;
+                text-align: center;
+                padding-bottom: 20px
+            }
+
+            .border {
+                border: 1px solid black;
+                margin: 30px 30px 30px 10px;
+                margin: 30px 30px 30px 10px
+            }
+
+            .c2b1 {
+                margin-top: 30px
+            }
+
+            .c2b2 {
+                margin-top: 125px
+            }
+
+            h3,
+            ul,
+            li {
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: left;
+                list-style-type: circle
+            }
+
+            ul li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin-bottom: 10px
+            }
+
+            i {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+                margin-right: 10px
+            }
+
+            .right {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg)
+            }
+
+            hr {
+                margin: 20px 10px 20px 20px
+            }
+
+            .profil img {
+                width: 100px;
+                height: 100px;
+                margin-top: 3px;
+                border-radius: 50%
+            }
+
+            span {
+                font-weight: bold;
+                margin-right: 20PX;
+                color: #0f3f3f
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto
+        }
+
+        img {
+            height: 100px
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class=container>
+            <div class=col1>
+                <div class=profil>
+                    <figure> <img src=assets/k.jpg alt="image de profil">
+                   <figcaption>Karim SERY</figcaption></figure>
+                   
+<figure><img src="assets/linkedin.jpeg" alt="icône LinkedIn"><figcaption><a href="https://www.linkedin.com/in/karimjsery">https://www.linkedin.com/in/karimjsery</a></figcaption></figure>
+                    
+                    
+
+<figure><img src=assets/github.png alt="icône GitHub">
+    <a href="https://github.com/KarimJSery">https://github.com/KarimJSery</a>
+    
+</figure>
+
+<figure>
+    <img src=assets/gitlab.png alt="icône Gitlab">
+    <a href="https://gitlab.com/KarimJSery">https://gitlab.com/KarimJSery</a>
+</figure>
+
+<figure>
+    <img src=assets/discord.png alt="icône Discord">
+    <a href="https://discord.gg/RXbgnh76">https://discord.gg/RXbgnh76</a></figure>
+                        <!-- <figure>
+                        </figure> -->
+<img src=assets/courriel.png alt="icône courriel">
+                          <p>stopscam@ik.me</p>  
+                </div>
+                <hr>
+                <h1>Technical background</h1>
+                <div class=icones>
+                    <img src=assets/sublimetext.jpg alt="icône sublimetext">
+                    <img src=assets/vscode.jpg alt="icône vscode">
+                    <img src=assets/html.jpg alt="icône html">
+                    <img src=assets/css.jpg alt="icône css">
+                    <img src=assets/js.jpg alt="icône js">
+                    <img src=assets/ajax.jpg alt="icône ajax">
+                    <img src=assets/bootstrap.jpg alt="icône bootstrap">
+                    <img src=assets/react.png alt="icône vscode">
+                    <img src=assets/mysql.jpg alt="icône mysql">
+                    <img src=assets/php.jpg alt="icône php">
+                </div>
+                <hr>
+            </div>
+            <div class=col2>
+                <div class="row bloc border c2b1">
+                    <ul>
+                        <li>&#9432;<span> Du 15/09/2022 au 15/02/2023: </span>formation Développeur Web et Web Mobile,
+                            Doranco</li>
+                    </ul>
+                    <h1> Description</h1>
+                    <ul>
+                        <li><i class=right></i><span>Méthode AGILE</span> - initiation</li>
+                        <li><i class=right></i><span>Intégration HTML5/CSS3</span> : création de pages Web</li>
+                        <li><i class=right></i><span>Javascript</span> DOM, Ajax</li>
+                        <li><i class=right></i><span>Framework Bootstrap</span> HTML,CSS et Javascript</li>
+                        <li><i class=right></i><span>Héberger un site Internet</span></li>
+                        <li><i class=right></i><span>Les clés du référencement naturel: SEO</span></li>
+                        <li><i class=right></i><span>Framework ReactJS</span></li>
+                        <li><i class=right></i><span>React NATIVE</span> Développement mobile</li>
+                        <li><i class=right></i><span>Analyse et conception UML</span></li>
+                        <li><i class=right></i><span>MySQL</span> - initiation</li>
+                        <li><i class=right></i><span>GIT</span> Gérer le versioning</li>
+                        <li><i class=right></i><span>PHP</span> POO, Développer un site Web dynamique - Projet</li>
+                        <li><i class=right></i><span>Symfony Framework</span>- Projet</li>
+                    </ul>
+                </div>
+                <div class="row bloc border c2b2">
+                    <div>
+                        <h1>Autres formations</h1>
+                        <ul>
+                            <li>&#9432; <span>Du 27/09/2021 au 04/02/2022</span> Développeur d'applications
+                                informatiques en java, android, kotlin à ALT RH Consulting</li>
+                            <li>&#9432; <span>Du 26/08/2019 au 13/11/2019</span> Techniques de base du développement
+                                JAVA SCRIPT, à AFPA, Amiens</li>
+                            <li>&#9432; <span>Du 12/06/2019 au 26/08/2019</span> Techniques de base du développement
+                                JAVA J2E, à AFPA, Amiens</li>
+                            <li>&#9432; <span>Du 09/07/2018 au 31/08/2018</span> Techniques de base du développement
+                                d'applications , à AFPA, Amiens</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
